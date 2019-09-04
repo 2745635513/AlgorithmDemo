@@ -28,10 +28,10 @@ public class RemoveDuplicates {
 
             }
         }
-        for (int k=0;k<count+1;k++){
-
-            System.out.println(nums[k]);
-        }
+//        for (int k=0;k<count+1;k++){
+//
+//            System.out.println(nums[k]);
+//        }
         return count + 1;
     }
 

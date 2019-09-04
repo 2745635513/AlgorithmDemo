@@ -4,7 +4,7 @@ public class ReverseInteger {
 
     public static int reverse(int x) {
         if(x==Integer.MIN_VALUE){
-            return x;
+            return 0;
         }
         int abs =Math.abs(x);
         String str = Integer.toString(abs);
