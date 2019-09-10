@@ -30,7 +30,7 @@ public class MergeTwoLists {
 
     /**
      * 采用递归的方式(把重复的去掉的，不符合题目要求)
-     *
+     *是算法题 删除重复的算法的解题思路
      */
     public ListNode mergeTwoLists2(ListNode l1, ListNode l2){
        if (l1 == null) return l2;
@@ -46,11 +46,11 @@ public class MergeTwoLists {
 
     public static void main(String[] args) {
         MergeTwoLists test = new MergeTwoLists();
-        MergeTwoLists mergeTwoLists = new MergeTwoLists();
+        ListNode mergeTwoLists = new ListNode();
         mergeTwoLists.addNode(1);
         mergeTwoLists.addNode(2);
         mergeTwoLists.addNode(4);
-        MergeTwoLists l = new MergeTwoLists();
+        ListNode l = new ListNode();
         l.addNode(1);
         l.addNode(3);
         l.addNode(5);
@@ -59,28 +59,4 @@ public class MergeTwoLists {
 
     }
 
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-    ListNode head =null;
-    public void addNode(int d) {
-        ListNode newNode = new ListNode(d);// 实例化一个节点
-        if (head == null) {
-            head = newNode;
-            return;
-        }
-        ListNode tmp = head;
-        while (tmp.next != null) {
-            tmp = tmp.next;
-        }
-        tmp.next = newNode;
-    }
 }
